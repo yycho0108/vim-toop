@@ -26,10 +26,10 @@ endfun
 function! toop#mapFunction(algorithm, key)
     exe 'nnoremap <silent> <Plug>actions'    .a:algorithm.' :<C-U>call toop#ActionSetup("'.a:algorithm.'")<CR>g@'
     exe 'xnoremap <silent> <Plug>actions'    .a:algorithm.' :<C-U>call toop#DoAction("'.a:algorithm.'",visualmode())<CR>'
-    exe 'nnoremap <silent> <Plug>actionsLine'.a:algorithm.' :<C-U>call toop#DoAction("'.a:algorithm.'",v:count1)<CR>'
+    " exe 'nnoremap <silent> <Plug>actionsLine'.a:algorithm.' :<C-U>call toop#DoAction("'.a:algorithm.'",v:count1)<CR>'
     exe 'nmap '.a:key.'  <Plug>actions'.a:algorithm
     exe 'xmap '.a:key.'  <Plug>actions'.a:algorithm
-    exe 'nmap '.a:key.a:key[strlen(a:key)-1].' <Plug>actionsLine'.a:algorithm
+    " exe 'nmap '.a:key.a:key[strlen(a:key)-1].' <Plug>actionsLine'.a:algorithm
 endfun
 
 fun! ActionOpfunc(type)

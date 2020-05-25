@@ -1,5 +1,6 @@
-*vim-toop.txt*  Easily map operations over text-objects
-*toop*
+*vim-toop.txt*		For Vim version 8.1	Last change: 2020 May 25
+
+Easily map operations over text-objects
 
 Author:  Jean Carlo Machado <https://jeancarlomachado.net/>:
 
